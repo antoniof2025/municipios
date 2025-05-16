@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificador de pueblos de Jaén</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  
+</head>
+<body>
+  <form onsubmit="event.preventDefault(); verificarPueblo();">
+    <h1>¿Pertenece a Jaén?</h1>
+    <label for="pueblo">Introduce el nombre de un pueblo:</label>
+    <input type="text" id="pueblo" placeholder="Ej. Linares">
+    <div class="buttons">
+      <button type="submit" class="check-button">Comprobar</button>
+      <button type="button" class="clear-button" onclick="limpiarInput()">Borrar</button>
+    </div>
+    <div id="resultado"></div>
+    <div id="imagen-localidad"></div>
+  </form>
+
+  <script src="js/municipios.js"></script>
+</body>
+</html>
